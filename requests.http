@@ -1,0 +1,31 @@
+### Rota raiz
+GET http://localhost:3334/ 
+
+### GET USERS
+GET http://localhost:3334/users
+
+### GET USER BY ID
+GET http://localhost:3334/users/090b8cc2-9960-4a8c-b78c-3cd772112e98
+
+### POST USER
+POST http://localhost:3334/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "teste@gmail.com",
+  "password": "123123"
+}
+
+### PUT USER
+PUT http://localhost:3334/users/090b8cc2-9960-4a8c-b78c-3cd772112e98
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "teste2@gmail.com",
+  "password": "123123"
+}
+
+### DELETE USER
+DELETE http://localhost:3334/users/090b8cc2-9960-4a8c-b78c-3cd772112e98
